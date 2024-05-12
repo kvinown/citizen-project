@@ -17,8 +17,14 @@ const server = http.createServer((req, res) => {
 		case "penduduk":
 			fileLocation = "pages/penduduk/index.html";
 			break;
-		case "Kartu Keluarga":
-			fileLocation = "pages/kartuKeluarga/index.html";
+		case "tambah_penduduk":
+			fileLocation = "pages/penduduk/create.html";
+			break;
+		case "kartu_keluarga":
+			fileLocation = "pages/kartu_keluarga/index.html";
+			break;
+		case "tambah_kartu_keluarga":
+			fileLocation = "pages/kartu_keluarga/create.html";
 			break;
 		default:
 			fileLocation = "pages/home.html";

@@ -87,10 +87,62 @@
 			id="contentContainer"
 			class="container mt-5">
 			<div class="header">
-				<h1>Home Page</h1>
+				<h1>Kartu Keluarga Page</h1>
 			</div>
 			<div class="body">
-				<h3>Selamat Datang pada Website Data Penduduk</h3>
+				<div class="container">
+					<div class="card">
+						<div class="row d-flex">
+							<h5 class="card-title col-md">Data Kartu Keluarga</h5>
+							<a
+								href="?menu=tambah_kartu_keluarga"
+								class="col-md-1 btn btn-primary ms-auto"
+								>Tambah</a
+							>
+						</div>
+
+						<table
+							class="mt-2 table table-bordered"
+							width="100%">
+							<thead class="border border-dark">
+								<tr>
+									<th scope="col">ID</th>
+									<th scope="col">Nama Kepala Keluarga</th>
+									<th scope="col">Delete</th>
+									<th scope="col">Edit</th>
+								</tr>
+							</thead>
+							<tbody class="border border-dark">
+								<tr>
+									<td></td>
+									<td></td>
+									<td>
+										<a
+											href=""
+											role="button"
+											class="btn btn-danger"
+											onclick="return confirmDelete()">
+											<i class="fas fa-trash"></i>
+										</a>
+										<script>
+											function confirmDelete() {
+												return confirm("Apakah Anda yakin menghapus data ini?");
+											}
+										</script>
+									</td>
+									<td>
+										<a
+											href=""
+											role="button"
+											class="btn btn-warning">
+											<i class="fas fa-edit"></i>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Akhir Content -->
