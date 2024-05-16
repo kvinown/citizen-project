@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="card">
+        <div class="row d-flex">
+            <h5 class="card-title col-md">Data Penduduk</h5>
+            <a
+                    href="?menu=tambah_penduduk"
+                    class="col-md-1 btn btn-primary ms-auto"
+            >Tambah</a
+            >
+        </div>
+
+        <table
+                class="mt-2 table table-bordered"
+                width="100%">
+            <thead class="border border-dark">
+            <tr>
+                <th scope="col">Nik</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">Tanggal Lahir</th>
+                <th scope="col">Golongan Darah</th>
+                <th scope="col">Agama</th>
+                <th scope="col">Status</th>
+                <th scope="col">ID Kartu Keluarga</th>
+                <th scope="col">Delete</th>
+                <th scope="col">Edit</th>
+            </tr>
+            </thead>
+            <tbody class="border border-dark">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a
+                            href=""
+                            role="button"
+                            class="btn btn-danger"
+                            onclick="return confirmDelete()">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                    <script>
+                        function confirmDelete() {
+                            return confirm("Apakah Anda yakin menghapus data ini?");
+                        }
+                    </script>
+                </td>
+                <td>
+                    <a
+                            href=""
+                            role="button"
+                            class="btn btn-warning">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

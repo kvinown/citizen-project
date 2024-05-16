@@ -1,0 +1,22 @@
+<!-- Header -->
+<!-- End Header -->
+<section class="content">
+	<div class="container">
+		<div class="card">
+			<div class="row d-flex">
+				<h5 class="card-title col-md">Home</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	// Inisialisasi toast menggunakan JavaScript
+	var toastEl = document.getElementById("toast");
+	var toast = new bootstrap.Toast(toastEl);
+
+	// Tampilkan toast jika session success ada
+	if ("{{ session('success') }}") {
+		toast.show();
+	}
+</script>

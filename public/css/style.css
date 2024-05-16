@@ -1,0 +1,8 @@
+nav {
+    min-height: 50px;
+    height: auto;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
